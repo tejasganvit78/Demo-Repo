@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Form</title>
+</head>
+<body>
+<!--this is multiline comment-->
+
+    <h1>Book Appointment</h1>
+    <hr>
+
+  <form onsubmit="formSubmit(event)">
+  
+  <label for="name">Name: </label>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="email">Email: </label>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="phone_number">Phone Number: </label>
+  <input type="tel" id="phone_number" name="phone_number" required><br><br>
+
+  <label for="Date_of_appointment">Date of appointment: </label>
+  <input type="date" id="Date_of_appointment" name="Date_of_appointment" required><br><br>
+
+  <label for="time_of_appointment">Time of appointment: </label>
+  <input type="time" id="time_of_appointment" name="time_of_appointment" required><br><br>
+ 
+  <label for="datetime-local">Datetime-local: </label>
+   <input type="datetime-local" id="datetime-local"><br><br>
+ 
+   <label for="week">Week: </label>
+   <input type="week" id="week"><br><br>
+ 
+   <label for="month">Month: </label>
+   <input type="month" id="month"><br><br>
+
+  <label for="url">Social Media link:</label>
+ <input type="url" id="url" name="url"><br><br>
+
+  <label for="number">Age:</label>
+ <input type="number" id="number" name="number"><br><br>
+
+  <label for="payment_options">Payment options:</label>
+   <input type="radio" name="payment_options" value="net_banking"> Net Banking
+    <input type="radio" name="payment_options" value="upi"> UPI
+    <input type="radio" name="payment_options" value="card">Credit/Debit Card
+
+    <br><br>
+
+   <label for="task">Tasks To Do:</label>
+    <input type="checkbox" name="task" value="call_father"> Call Father
+    <input type="checkbox" name="task" value="buy_groceries"> Buy Groceries
+    <input type="checkbox" name="task" value="meet_doctor"> Meet Doctor<br><br>
+  
+
+ <button type="submit">Submit</button> <button type="reset">Reset</button>
+
+    </form>
+    <hr>
+  
+</body>
+<script src="form.js"></script>
+</html>
